@@ -1,5 +1,6 @@
 import './globals.css'
 import { Inter } from 'next/font/google'
+// import default_pic from "./default.png"
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -11,7 +12,13 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      {/* <link rel="icon" href="/favicon.png" sizes="7x5" /> */}
+      <body className={inter.className}>
+        {/* <header className="header">
+          <img src={default_pic} />
+        </header> */}
+        {children}
+      </body>
     </html>
   )
 }
