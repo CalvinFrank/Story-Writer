@@ -1,6 +1,6 @@
 import './globals.css'
 import { Inter } from 'next/font/google'
-// import default_pic from "./default.png"
+import styles from "./layout.module.css"
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -14,8 +14,14 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <link rel="icon" href="/favicon.png" sizes="7x5" />
       <body className={inter.className}>
-        <header className="header">
-          {/* <img src={default_pic} /> */}
+        <header className={styles.header}>
+          <button className={styles.profile}>
+            <img src="https://icons.veryicon.com/png/o/miscellaneous/administration/person-16.png" className={styles.profileP}/>  
+            John Doe
+          </button>
+          <button className={styles.logoB}>
+            <img src="favicon.png" className={styles.logo} />
+          </button>
         </header>
         {children}
       </body>

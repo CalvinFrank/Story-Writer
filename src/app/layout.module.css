@@ -1,0 +1,29 @@
+.header {
+  display: flex;
+  box-shadow: 0px 5.5px 4px rgba(0, 0, 0, 0.25);
+  flex-direction: row;
+}
+.profile {
+  display: flex;
+  border-radius: 100%;
+  border: 0;
+  background: transparent;
+  flex-direction: column;
+  margin-left: 0.5vw;
+}
+.profileP {
+  width: 59px;
+  height: 59px;
+}
+.logo {
+  display: flex;
+  width: 59px;
+  height: 70.8px;
+  background: transparent;
+}
+.logoB {
+  margin-left: auto;
+  background: transparent;
+  margin-right: 0.5vw;
+}
+
