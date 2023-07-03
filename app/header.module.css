@@ -7,8 +7,9 @@
   display: flex;
   background: transparent;
   flex-direction: column;
-  margin-left: 0.5vw;
   font-size: calc(10px + 0.44vw);
+  margin-left: auto;
+  margin-right: 0.5vw;
 }
 .profileP {
   width: calc(47px + 1.1vw);
@@ -21,8 +22,7 @@
   background: transparent;
 }
 .logoB {
-  margin-left: auto;
+  margin-left: 0.5vw;
   background: transparent;
-  margin-right: 0.5vw;
 }
 

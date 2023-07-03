@@ -1,12 +1,15 @@
 "use client";
 import { useAppContext } from "../context";
+import { useRouter } from "next/navigation";
 
 export default function Home() {
   const {isLoggedIn, setIsLoggedIn} = useAppContext()
+  const router = useRouter()
 
   const clickHandler = (e) => {
     e.preventDefault();
     setIsLoggedIn((l) => !l)
+    router.push("/")
   }
 
   return (
@@ -16,7 +19,7 @@ export default function Home() {
         </form>
         <div className={ isLoggedIn ? "none" : "page" }>
           <span>Already have an account?</span>
-          <a className="toLog" href="/log-in">Log In</a> 
+          <a className="toLog" href="/sign-in">Sign In</a> 
         </div>
       </div>
   );

@@ -12,18 +12,18 @@ export default function Header(props) {
         router.push("/profile")
         break;
       case false:
-        router.push("/sign-up")
+        router.push("/log-in")
         break;
     }
   }
   return (
     <header className={styles.header}>
-          <button className={styles.profile}>
+            <button className={styles.logoB}>
+            <img src="http://localhost:3000/favicon.png" className={styles.logo} onClick={() => {router.push("/")}}/>
+          </button>
+            <button className={styles.profile}>
             <img src="https://icons.veryicon.com/png/o/miscellaneous/administration/person-16.png" onClick={clickedPerson} className={styles.profileP}/>  
             John Doe
-          </button>
-          <button className={styles.logoB}>
-            <img src="http://localhost:3000/favicon.png" className={styles.logo} onClick={() => {router.push("/")}}/>
           </button>
         </header>
   )
