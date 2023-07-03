@@ -1,0 +1,42 @@
+.welcome {
+  font-size: 6.5vw;
+  margin: 0;
+  margin-top: 6px;
+}
+.body {
+  text-align: center;
+  margin: 0 6vw;
+}
+.text {
+  font-size: 4.5vw;
+  margin: 0;
+}
+.action {
+  color: white;
+  border-radius: 2vw;
+  width: 47vw;
+  height: 6vw;
+  font-size: 4.6vw;
+  margin-top: 2vh;
+  box-shadow: 3.5px 6px 4px 0.1px rgba(0, 0, 0, 0.25);
+}
+.action:active {
+  box-shadow: inset -3px -5.5px 4px 0.1px rgba(0, 0, 0, 0.25);
+}
+@media (prefers-color-scheme: light) {
+  .action {
+    background: #16CEF6;
+  }
+  .action:active {
+    background-color: #07add3;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  .action {
+    background: #15b6db;
+  }
+  .action:active {
+    background-color: #069abb;
+  }
+}
+
